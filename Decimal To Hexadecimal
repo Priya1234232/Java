@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class DecimalToHexadecimal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input decimal number
+        System.out.print("Enter a decimal number: ");
+        int decimal = scanner.nextInt();
+
+        // Convert to hexadecimal
+        String hexadecimal = Integer.toHexString(decimal).toUpperCase();
+
+        // Output result
+        System.out.println("Hexadecimal: " + hexadecimal);
+
+        scanner.close();
+    }
+}
